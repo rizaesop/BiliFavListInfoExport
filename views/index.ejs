@@ -1,22 +1,22 @@
 <!-- views/index.ejs -->
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <link rel="stylesheet" href="/views/style.css" />
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <link rel="stylesheet" href="/stylesheet/index.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>API Input</title>
-</head>
-<body>
-  <form action="/getData" method="post">
-    <h2>INFO INPUT</h2>
-    <label for="mediaId">FavList ID:</label>
-    <input type="text" id="mediaId" name="mediaId" required><br>
+  </head>
+  <body>
+    <form action="/getData" method="post">
+      <h2>INFO INPUT</h2>
+      <label for="mediaId">FavList ID:</label>
+      <input type="text" id="mediaId" name="mediaId" required /><br />
 
-    <label for="sessdata">SESSDATA:</label>
-    <input type="text" id="sessdata" name="sessdata" required><br>
+      <label for="sessdata">SESSDATA:</label>
+      <input type="text" id="sessdata" name="sessdata" required /><br />
 
-    <button type="submit">Get API Data</button>
-  </form>
-</body>
+      <button type="submit">Get API Data</button>
+    </form>
+  </body>
 </html>

@@ -1,0 +1,97 @@
+/* style.css */
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  height: 100vh; /* 100% 视窗高度 */
+  background-color: #fffff3; /* 设置页面背景色 */
+}
+
+/* 横幅样式 */
+#banner {
+  background-color: #a7a0ec; /* 设置横幅背景色 */
+  padding: 20px;
+  margin: 0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* 添加阴影效果 */
+  width: 70%;
+  height: 300px; /* 设置横幅高度 */
+  position: relative; /* 添加相对定位 */
+  z-index: 2; /* 设置 z-index 以确保横幅位于表单之上 */
+}
+
+h1 {
+  color: #fffff3;
+  text-align: center;
+  font-size: 80px;
+  font-family: "Minecraft";
+}
+
+p {
+  color: #fffff3;
+  font-family: "Minecraft";
+  text-align: left;
+  font-size: 15px;
+  margin-inline-end: 1em;
+  vertical-align: bottom;
+}
+/* 整个表单容器 */
+.form-container {
+  max-width: 400px; /* 设置表单最大宽度 */
+  margin: 10px; /* 上下各有 10px 的边距 */
+  margin-left: 40px;
+  position: relative; /* 添加相对定位 */
+  z-index: 1; /* 设置 z-index 以确保表单位于横幅之下 */
+}
+
+/* 标题样式 */
+h2 {
+  font-size: 1.5em;
+  margin-bottom: 1.5em;
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+}
+
+/* 标签样式 */
+label {
+  font-family: "Times New Roman", Times, serif;
+  float: left;
+  flex: 1; /* 使标签占据左侧所有可用空间 */
+  display: flex; /* 使用 flex 布局 */
+  align-items: center; /* 垂直居中 */
+  width: 80px;
+}
+
+/* 输入框样式 */
+input {
+  flex: 2; /* 使输入框占据右侧所有可用空间 */
+  display: flex;
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+/* 按钮样式 */
+button {
+  background-color: #b9bcff;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 2em;
+  float: right;
+}
+
+button:hover {
+  background-color: #9499ff;
+}
+
+@font-face {
+  font-family: "Minecraft";
+  src: url("Minecraft.otf") format("otf"); /* 所有现代浏览器 */
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
